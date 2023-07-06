@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Profile } from './Profile/Profile';
 import { Statistics } from './Statistics/Statistics';
+import { FriendList } from './FriendList/FriendList';
 
 export const App = () => {
   const [showProfile, setShowProfile] = useState(false);
@@ -57,7 +58,7 @@ export const App = () => {
           {showProfile && (
             <>
               <Profile />
-              <button class="back-button" onClick={handleBack}>
+              <button className={[`back-button`]} onClick={handleBack}>
                 X
               </button>
             </>
@@ -65,7 +66,15 @@ export const App = () => {
           {showStatistic && (
             <>
               <Statistics />
-              <button class="back-button" onClick={handleBack}>
+              <button className={[`back-button`]} onClick={handleBack}>
+                X
+              </button>
+            </>
+          )}
+          {showFriendList && (
+            <>
+              <FriendList />
+              <button className={[`back-button`]} onClick={handleBack}>
                 X
               </button>
             </>

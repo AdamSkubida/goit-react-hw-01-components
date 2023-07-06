@@ -20,6 +20,15 @@ code {
   gap: 30px;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
 button {
   width: 200px;
   height: 70px;

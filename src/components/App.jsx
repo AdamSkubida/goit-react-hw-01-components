@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Profile } from './Profile/Profile';
 import { Statistics } from './Statistics/Statistics';
 import { FriendList } from './FriendList/FriendList';
+import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 
 export const App = () => {
   const [showProfile, setShowProfile] = useState(false);
@@ -74,6 +75,14 @@ export const App = () => {
           {showFriendList && (
             <>
               <FriendList />
+              <button className={[`back-button`]} onClick={handleBack}>
+                X
+              </button>
+            </>
+          )}
+          {showTransactionHistory && (
+            <>
+              <TransactionHistory />
               <button className={[`back-button`]} onClick={handleBack}>
                 X
               </button>

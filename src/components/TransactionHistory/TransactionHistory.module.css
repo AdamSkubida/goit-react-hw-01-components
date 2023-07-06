@@ -1,0 +1,22 @@
+table {
+  border-collapse: collapse;
+  margin: 0 0 50px 0;
+}
+
+table,
+td,
+th {
+  border: 1px solid;
+}
+
+th {
+  width: 200px;
+  height: 60px;
+  padding: 5px;
+  background-color: aliceblue;
+}
+
+td {
+  height: 40px;
+  text-align: center;
+}
